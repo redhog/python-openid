@@ -277,7 +277,7 @@ class Message(object):
 
         for (ns_uri, ns_key), value in self.args.iteritems():
             key = self.getKey(ns_uri, ns_key)
-            args[key] = value.encode('UTF-8')
+            args[key] = value
 
         return args
 
